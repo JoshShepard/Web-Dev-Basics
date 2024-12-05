@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Basics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Web Dev Notes</h1>
+    </header>
+
+    <main>
+        <h1 class="section-title">BASIC CSS PRACTICE</h1>
+        <section class="flexbox">
+            <h2>FLEXBOX</h2>
+            <p>Flexbox is a great skill to learn for styling elements on a webpage or within a container. When the display property is set to the value of 'flex' is will turn the container to a flex-container and children inside as flex-items. Flexbox allows developers to change the layout within a row or column.</p>
+            
+            <div class="flex-direction-container">
+                <h3>flex-direction</h3>
+                <p>The flex-direction property is used to tell the browser to layout the child elements horizontally or vertically.</p>
+                <div class="flex-direction-row">
+                    <p>By default declaring flex on a container will line the children up horizontally next to one another. If this is the goal you do not have to explictly declare the flex-direction. This means that justify-content is moving items across the main axis which is horizontal and align-items moves items veritcally against the cross axis. We can also reverse the order horizontally.</p>
+                    <p>CSS Code: <b>flex-direction: row</b></p>
+                    <div class="box-container">
+                        <div class="box red">BOX 1</div>
+                        <div class="box blue">BOX 2</div>
+                        <div class="box green">BOX 3</div>
+                        <div class="box purple">BOX 4</div>
+                        <div class="box pink">BOX 5</div>
+                    </div>
+                    <p>CSS Code: <b>flex-direction: row-reverse</b></p>
+                    <div class="box-container-reverse-row">
+                        <div class="box red">BOX 1</div>
+                        <div class="box blue">BOX 2</div>
+                        <div class="box green">BOX 3</div>
+                        <div class="box purple">BOX 4</div>
+                        <div class="box pink">BOX 5</div>
+                    </div>
+                </div>
+                <div class="flex-direction-column">
+                    <p>The other value the flex-direction property accepts is column. This will be overriding the default value and display child elements vertically. This will flip the axis so justify-content is now along the vertical axis and align-items will move horizontally.</p>
+                    <p>CSS Code: <b>flex-direction: column</b></p>
+                    <div class="box-column">
+                        <div class="box-container-column">
+                            <div class="box red">BOX 1</div>
+                            <div class="box blue">BOX 2</div>
+                            <div class="box green">BOX 3</div>
+                            <div class="box purple">BOX 4</div>
+                            <div class="box pink">BOX 5</div>
+                        </div>
+
+                        
+                        <div class="box-container-reverse-column">
+                            <p>CSS Code: <b>flex-direction: column-reverse</b></p>
+                            <div class="box red">BOX 1</div>
+                            <div class="box blue">BOX 2</div>
+                            <div class="box green">BOX 3</div>
+                            <div class="box purple">BOX 4</div>
+                            <div class="box pink">BOX 5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+    </main>
+</body>
+</html>
